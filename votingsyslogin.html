@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="logincss.css" />
+    <title>Biometric Voting System</title>
+  </head>
+  <body>
+    <div class="heading">
+      <span class="h1">
+        <h1 style="font-size: 300%">Biometric Voting System</h1>
+      </span>
+    </div>
+
+    <div class="buttons">
+      <span class="dropdown">
+        <button
+          type="dropbtn"
+          style="
+            background: linear-gradient(
+              to bottom right,
+              rgb(255, 255, 255),
+              rgb(55, 55, 255)
+            );
+            border: 2px solid black;
+            border-radius: 10px;
+          "
+        >
+          <strong> Login</strong> as <br />
+          <strong> User </strong>
+        </button>
+        <div class="dropdown-content">
+          <a href="biomscan.html" target="_self"
+            >Biometric <b>(recommended)</b></a
+          >
+          <a href="#">ID-card</a>
+          <a href="userloginF.html">Credentials</a>
+        </div>
+      </span>
+      <span class="b2">
+        <button
+          onclick="document.location='adminloginF.html'"
+          type="button"
+          style="
+            background: linear-gradient(
+              to bottom right,
+              rgb(255, 255, 255),
+              rgb(55, 55, 255)
+            );
+            border: 2px solid black;
+            border-radius: 10px;
+          "
+        >
+          <strong> Login</strong> as <br />
+          <strong> Administrator</strong>
+        </button>
+      </span>
+    </div>
+    <footer>
+      If you are not registered to this site.
+      <strong class="foot"> Contact your mentor</strong> for Registration
+      Procedure.
+    </footer>
+  </body>
+</html>

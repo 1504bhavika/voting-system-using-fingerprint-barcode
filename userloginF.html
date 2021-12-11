@@ -1,0 +1,73 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Userlogin</title>
+    <link rel="stylesheet" href="userloginF.css" />
+  </head>
+  <body>
+    <div class="box">
+      <form action="/authenticate.php" style="max-width: 500px; margin: auto">
+        <h2 style="text-shadow: 5px 5px 15px rgb(0, 0, 0)">USER LOGIN</h2>
+        <div class="input-container">
+          <img
+            src="\icons\number-blocks.png"
+            style="
+              height: 50px;
+              width: 50px;
+              margin-right: 1px;
+              padding-top: 1px;
+            "
+            alt=""
+          />
+          <input
+            class="input-field"
+            type="number"
+            placeholder="UserNumber"
+            name="User Number"
+            required
+          />
+        </div>
+        <div class="input-container">
+          <img
+            src="\icons\id-card.png"
+            style="
+              height: 65px;
+              width: 50px;
+              margin-right: 1px;
+              padding-top: 1px;
+            "
+            alt=""
+          />
+          <input
+            class="input-field"
+            type="text"
+            placeholder="Name"
+            name="name"
+            required
+          />
+        </div>
+        <div class="input-container">
+          <img
+            src="\icons\lock.png"
+            style="
+              height: 50px;
+              width: 50px;
+              margin-right: 1px;
+              padding-top: 1px;
+            "
+            alt=""
+          />
+          <input
+            class="input-field"
+            type="password"
+            placeholder="Password"
+            name="psw"
+            required
+          />
+        </div>
+        <button type="submit" class="btn">Login</button>
+        <div class="container signin"></div>
+      </form>
+    </div>
+  </body>
+</html>

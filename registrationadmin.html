@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="registrationadmin.css" />
+    <title>RegistrationforVote</title>
+    <script>
+      var myVar;
+      
+      function myFunction() {
+        myVar = setTimeout(showPage, 1000);
+      }
+      
+      function showPage() {
+        document.getElementById("loader").style.display = "none";
+        document.getElementById("myDiv").style.display = "block";
+      }
+      </script>
+  </head>
+  <body onload="myFunction()">
+    <div id="loader"></div>
+      <h1 style="text-align: center; text-shadow: 5px 5px 15px rgb(0, 0, 0); ">Enter the details of the following User</h1>
+      <div  id="myDiv" class="animate-bottom">
+
+          <form action="/action_page.php" style="max-width: 500px; margin: auto;">
+            <h2 style="text-shadow: 5px 5px 15px rgb(0, 0, 0);">Registeration Form</h2>
+            <div class="input-container">
+                <img src="\icons\number-blocks.png" style="height: 35px; width: 35px; margin-right: 1px; padding-top: 1px;" alt="">
+                <input
+                class="input-field"
+                type="number"
+                placeholder="RollNumber"
+                name="RollNumber" required
+                />
+            </div>
+            
+            <div class="input-container">
+                <img src="\icons\id-card.png" style="height: 40px; width: 35px; margin-right: 1px; padding-top: 1px;" alt="">
+                <input
+                class="input-field"
+                type="text"
+                placeholder="Name"
+                name="name" required
+                />
+            </div>
+            <div class="input-container">
+                <img src="\icons\calendar.png" style="height: 40px; width: 35px; margin-right: 1px; padding-top: 1px;" alt="">
+                <input
+                class="input-field"
+                type="number"
+                placeholder="Year"
+                name="name" required
+                />
+            </div>
+            <div class="input-container">
+                <img src="\icons\biometrics.png" style="height: 40px; width: 35px; margin-right: 1px; padding-top: 1px;" alt="">
+                <input
+                class="input-field"
+                type="file"
+                placeholder="Name"
+                name="Biometric" 
+                />
+            </div>
+            
+            <div class="input-container">
+                <img src="\icons\lock.png" style="height: 35px; width: 40px; margin-right: 1px; padding-top: 1px;" alt="">
+                <input
+                class="input-field"
+                type="password"
+                placeholder="Password"
+                name="psw" required
+                />
+            </div>
+            
+            <button type="submit" class="btn">Register</button>
+            <div class="container signin">
+            </div>
+        <p style="margin-left: 130px;">
+          Already have an account?
+          <a href="votingsyslogin.html" target="_blank">Log in</a>.
+        </p>
+      </div>
+    </form>
+    
+
+  </body>
+</html>
